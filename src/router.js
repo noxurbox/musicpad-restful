@@ -2,6 +2,9 @@ import express from "express";
 import compression from "compression";
 import connectdb from "./database";
 
+// import route controllers
+import authController from "./controllers/auth.controller";
+
 const router = express();
 
 // connect to mongo database using mongoose
@@ -24,6 +27,7 @@ router.use(compression({
   level: 2
 }));
 
-// route to controllers here TODO
+// route to controllers
+router.use("/auth", authController());
 
 export default router;

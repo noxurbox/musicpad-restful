@@ -33,6 +33,7 @@
     "joi": "^17.6.2",
     "js-yaml": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.6.5"
+    "mongoose": "^6.6.5",
+    "safe-regex": "^2.1.1"
   }
 }
