@@ -10,6 +10,12 @@ To run the application in development mode you'll need docker, node18, visual st
 
 DO NOT DEPLOY THE APPLICATION TO A K8S CLUSTER.
 
+Once you have the prerequisites you can simply run `docker-compose up --build` in a termnial. Docker & docker compose will pull everything needed to run the application.
+
+The application will by defult run on `http://localhost:3080`
+
+The API endpoints will use the route `/_helix`
+
 ## Contributing
 
 As of now i have not offically setup unit tests or a CI pipeline with the repo so please DO NOT open pull requests yet.
