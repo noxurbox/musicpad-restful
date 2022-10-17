@@ -10,9 +10,14 @@ To run the application in development mode you'll need docker, node18, visual st
 
 DO NOT DEPLOY THE APPLICATION TO A K8S CLUSTER.
 
+Make sure to make the .env file with the following in the main dir:
+```
+MONGO_URI=mongodb://mongo:27017/musicpad
+```
+
 Once you have the prerequisites you can simply run `docker-compose up --build` in a termnial. Docker & docker compose will pull everything needed to run the application.
 
-The application will by defult run on `http://localhost:3080`
+The application will by default run on `http://localhost:3080`
 
 The API endpoints will use the route `/_helix`
 
